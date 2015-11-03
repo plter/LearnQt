@@ -25,7 +25,7 @@ void MainWindow::on_btnShowDir_clicked()
     cmd+="nautilus ";
 #elif defined(Q_OS_WIN32)
     cmd+="explorer ";
-#elif
+#else
     QMessageBox::information(this,"你好","你的操作系统不被支持");
     return;
 #endif
