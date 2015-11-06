@@ -58,7 +58,9 @@ function init(canvas) {
 }
 
 function update() {
-    context.clearRect(0, 0, 550, 400);
+    if(context){
+        context.clearRect(0, 0, 550, 400);
+    }
 
     var b;
     for (var i = 0; i < balls.length; i++) {
