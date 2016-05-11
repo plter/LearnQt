@@ -4,7 +4,7 @@ function Ball(x, y) {
     var _this = {};
     _this.x = x;
     _this.y = y;
-    _this.r = 15;
+    _this.r = 3;
     _this.speedX = Math.random() * 10 - 5;
     _this.speedY = Math.random() * 10 - 5;
 
@@ -52,7 +52,7 @@ function Ball(x, y) {
 function init(canvas) {
     context = canvas.getContext("2d");
 
-    for (var i = 0; i < 30; i++) {
+    for (var i = 0; i < 1000; i++) {
         balls.push(Ball(300, 200));
     }
 }
